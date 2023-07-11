@@ -5,5 +5,6 @@ useHead({ title: "Home" });
 <template>
   <div id="page-home">
     <h1>Nuxt / ZenStack</h1>
+    <TheDemoQuery />
   </div>
 </template>
