@@ -4,5 +4,11 @@ export default defineNuxtConfig({
     transpile: ["trpc-nuxt"],
   },
   devtools: { enabled: true },
+  runtimeConfig: {
+    auth: {
+      cookieName: "",
+      jwtSecret: "",
+    },
+  },
   typescript: { typeCheck: true },
 });
