@@ -23,7 +23,8 @@
     "@prisma/client": "^4.16.2",
     "@zenstackhq/runtime": "1.0.0-beta.8",
     "jsonwebtoken": "^9.0.1",
-    "trpc-nuxt": "^0.10.6"
+    "trpc-nuxt": "^0.10.6",
+    "trpc-shield": "^0.4.3"
   },
   "devDependencies": {
     "@lewebsimple/eslint-config": "^0.7.9",

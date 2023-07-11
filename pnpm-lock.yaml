@@ -17,6 +17,9 @@ dependencies:
   trpc-nuxt:
     specifier: ^0.10.6
     version: 0.10.6(@trpc/client@10.34.0)(@trpc/server@10.34.0)
+  trpc-shield:
+    specifier: ^0.4.3
+    version: 0.4.3
 
 devDependencies:
   '@lewebsimple/eslint-config':
@@ -8749,6 +8752,12 @@ packages:
       ofetch: 1.1.1
       ohash: 1.1.2
       ufo: 1.1.2
+    dev: false
+
+  /trpc-shield@0.4.3:
+    resolution: {integrity: sha512-cS29TSgKgZhi6garadu29YrtPUYD7/OxXg+URA2Ce4PZQfAmZlcInMP7E0mioqqgvnun7E9R9teSFfZa0kw8Yg==}
+    dependencies:
+      '@trpc/server': 10.34.0
     dev: false
 
   /ts-morph@16.0.0:
