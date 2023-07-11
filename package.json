@@ -21,7 +21,8 @@
   "dependencies": {
     "@prisma/client": "^4.16.2",
     "@tanstack/vue-query": "^4.29.20",
-    "@zenstackhq/runtime": "1.0.0-beta.8"
+    "@zenstackhq/runtime": "1.0.0-beta.8",
+    "@zenstackhq/server": "1.0.0-beta.8"
   },
   "devDependencies": {
     "@lewebsimple/eslint-config": "^0.7.9",
