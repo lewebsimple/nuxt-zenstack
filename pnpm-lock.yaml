@@ -58,6 +58,9 @@ devDependencies:
   stylelint:
     specifier: ^15.10.1
     version: 15.10.1
+  tsx:
+    specifier: ^3.12.7
+    version: 3.12.7
   vue-tsc:
     specifier: ^1.8.4
     version: 1.8.4(typescript@5.1.6)

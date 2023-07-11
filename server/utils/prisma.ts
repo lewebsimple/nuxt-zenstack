@@ -4,7 +4,8 @@ import { type H3Event } from "h3";
 
 import { type AuthState } from "./auth";
 
-const prisma = new PrismaClient();
+export const prisma = new PrismaClient();
+export type Prisma = typeof prisma;
 
 export function getExtendedPrisma(event: H3Event) {
   return withPresets(prisma, { user: (event.context.auth as AuthState).user || undefined });
