@@ -4,8 +4,8 @@
 //////////////////////////////////////////////////////////////////////////////////////////////
 
 datasource db {
-    provider="sqlite"
-    url="file:./dev.db"
+    provider = "sqlite"
+    url      = "file:../../dev.db"
 }
 
 generator client {
@@ -15,16 +15,16 @@ generator client {
 /// @@allow('create', true)
 /// @@allow('all', auth() == this)
 model User {
-    id String @id() @default(cuid())
+    id       String @id() @default(cuid())
     /// @email
-    email String @unique()
+    email    String @unique()
     /// @password
     /// @omit
     /// @length(8, 16)
     password String
-    posts Post[]
+    posts    Post[]
 
-    zenstack_guard Boolean @default(true)
+    zenstack_guard       Boolean @default(true)
     zenstack_transaction String?
 
     @@index([zenstack_transaction])
@@ -33,17 +33,17 @@ model User {
 /// @@allow('read', auth() != null && published)
 /// @@allow('all', author == auth())
 model Post {
-    id String @id() @default(cuid())
+    id        String   @id() @default(cuid())
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt()
     /// @length(1, 256)
-    title String
-    content String
-    published Boolean @default(false)
-    author User? @relation(fields: [authorId], references: [id])
-    authorId String?
+    title     String
+    content   String
+    published Boolean  @default(false)
+    author    User?    @relation(fields: [authorId], references: [id])
+    authorId  String?
 
-    zenstack_guard Boolean @default(true)
+    zenstack_guard       Boolean @default(true)
     zenstack_transaction String?
 
     @@index([zenstack_transaction])
