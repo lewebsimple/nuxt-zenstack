@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lewebsimple/nuxt-minimal.git"
+    "url": "https://github.com/lewebsimple/nuxt-zenstack.git"
   },
   "scripts": {
     "build": "nuxt build",
