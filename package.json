@@ -22,6 +22,7 @@
   "dependencies": {
     "@prisma/client": "^4.16.2",
     "@zenstackhq/runtime": "1.0.0-beta.8",
+    "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.1",
     "trpc-nuxt": "^0.10.6",
     "trpc-shield": "^0.4.3"
@@ -30,6 +31,7 @@
     "@lewebsimple/eslint-config": "^0.7.9",
     "@lewebsimple/stylelint-config": "^0.7.9",
     "@nuxt/devtools": "latest",
+    "@types/bcryptjs": "^2.4.2",
     "@types/jsonwebtoken": "^9.0.2",
     "@types/node": "^20.4.1",
     "@zenstackhq/trpc": "1.0.0-beta.8",
