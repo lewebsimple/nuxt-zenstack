@@ -1,6 +1,6 @@
 import { rule } from "trpc-shield";
 
-import { type Context } from "../trpc/trpc";
+import { type Context } from "./trpc";
 
 export { allow, and, chain, deny, not, or, race } from "trpc-shield";
 

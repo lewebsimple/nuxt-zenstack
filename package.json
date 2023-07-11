@@ -12,7 +12,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "lint": "eslint --fix . && stylelint --fix **/*.{css,scss,vue}",
-    "prepare": "husky install && zenstack generate --schema server/schema.zmodel && nuxt prepare",
+    "prepare": "husky install && zenstack generate --schema server/schema.zmodel && nuxt prepare && pnpm lint",
     "release": "pnpm lint && changelogen --release --push"
   },
   "prisma": {
