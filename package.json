@@ -20,7 +20,11 @@
     "seed": "tsx server/prisma/seed.ts"
   },
   "dependencies": {
+    "@lewebsimple/nuxt3-svg": "^0.2.2",
+    "@nuxthq/ui": "^2.5.0",
     "@prisma/client": "^4.16.2",
+    "@vorms/core": "^1.1.0",
+    "@vorms/resolvers": "^1.1.0",
     "@zenstackhq/runtime": "1.0.0-beta.8",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.1",
