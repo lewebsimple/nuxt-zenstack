@@ -3,5 +3,6 @@
     <main class="flex-grow container py-6">
       <slot />
     </main>
+    <TheAppFooter />
   </div>
 </template>
